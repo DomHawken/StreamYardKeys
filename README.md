@@ -6,6 +6,7 @@ Automate switching camera angles and video/audio mute on the Streamyard video st
 - Open the [StreamYard](https://streamyard.com/) website, log into your StreamYard account and open a new broadcast. There is no need to go live.
 - Select TamperMonkey from the extension menu top right on Chrome.
 ![TemperMonkey Menu](assets/screenshot_01.png)
+
 - Select 'Create New Script' from the TamperMonkey menu.
 ![TamperMonkey New Script Menu](assets/screenshot_02.png)
 
