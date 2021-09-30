@@ -1,0 +1,51 @@
+// ==UserScript==
+// @name         StreamyardKeys
+// @namespace    http://streamyard.com
+// @version      1.0
+// @description  Control StreamYard veiws and cameras from the keyboard
+// @author       dom@del.co.uk
+// @match        https://streamyard.com/*
+// @grant        none
+// @run-at       document-end
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    document.addEventListener('keydown', function(e) {
+        console.log(e);
+        // SHIFT CTRL COMMAND Q - switches the microphone mute on and off
+        if (e.key == "Q" && e.shiftKey && e.ctrlKey && !e.altKey && e.metaKey) {
+            var unmuteButton = document.querySelector('[aria-label="Unmute microphone"]');
+            var muteButton = document.querySelector('[aria-label="Mute microphone"]');
+
+            if (unmuteButton !== null) {
+                unmuteButton.click();
+            } else {
+                muteButton.click();
+            }
+        // SHIFT CTRL COMMAND W - switches the camera on and off
+        } else if (e.key == "W" && e.shiftKey && e.ctrlKey && !e.altKey && e.metaKey) {
+            var faceUnmuteButton = document.querySelector('[aria-label="Turn on camera"]');
+            var faceMuteButton = document.querySelector('[aria-label="Turn off camera"]');
+
+            if (faceUnmuteButton !== null) {
+                faceUnmuteButton.click();
+            } else {
+                faceMuteButton.click();
+            }
+        // SHIFT CTRL COMMAND E - switches to the comments
+        } else if (e.key == "E" && e.shiftKey && e.ctrlKey && !e.altKey && e.metaKey) {
+            document.getElementById("broadcast-aside-tab-comments").click();
+        // SHIFT CTRL COMMAND R - switches to the banners
+        } else if (e.key == "R" && e.shiftKey && e.ctrlKey && !e.altKey && e.metaKey) {
+            document.getElementById("broadcast-aside-tab-banners").click();
+        // SHIFT CTRL COMMAND T - switches to the brand
+        } else if (e.key == "T" && e.shiftKey && e.ctrlKey && !e.altKey && e.metaKey) {
+            document.getElementById("broadcast-aside-tab-brand").click();
+        // SHIFT CTRL COMMAND Y - switches to the private chat
+        } else if (e.key == "Y" && e.shiftKey && e.ctrlKey && !e.altKey && e.metaKey) {
+            document.getElementById("broadcast-aside-tab-chat").click();
+        }
+}, false);
+})();
