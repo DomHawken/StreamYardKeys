@@ -30,6 +30,8 @@ The script implements the following keys:
 
 Should be self explanatory in the code how to change the keys and modifiers.
 
+You can set up your Elgato StreamDeck or controller to send the keys you set up in the script.
+
 This will now control Streamyard **as long as Chrome has the focus**. If you want to be able to control Streamyard whilst other apps have the focus you can do so with [AutoHotkey](https://www.autohotkey.com/), as on this article:
 
 [https://techdailychronicle.com/managing-streamyard-using-the-elgato-stream-deck/](https://techdailychronicle.com/managing-streamyard-using-the-elgato-stream-deck/)
