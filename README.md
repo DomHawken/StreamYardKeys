@@ -15,7 +15,7 @@ Based on this [original script](https://gist.github.com/rothgar/92e69d5bdcf80ea2
   
 ![TamperMonkey New Script Menu](assets/screenshot_02.png)
    
-- replace the template script by pasting in this (TamperMonkey script)[https://github.com/DomHawken/StreamYardKeys/blob/main/tampermonkey%20script/StreamYardKeys_Script.txt] from this repository.
+- replace the template script by pasting in this [TamperMonkey script](https://github.com/DomHawken/StreamYardKeys/blob/main/tampermonkey%20script/StreamYardKeys_Script.txt) from this repository.
 - Save the TamperMonkey cript (File->Save).
 - Reload the StreamYard page and enter the studio
   
