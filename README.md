@@ -3,6 +3,7 @@ Automate switching camera angles and video/audio mute on the Streamyard video st
 
 Based on this [original script](https://gist.github.com/rothgar/92e69d5bdcf80ea23f065bb6db03f7cd) by [rothgar](https://github.com/rothgar).
 
+## TamperMonkey
 - Use [Chrome](https://www.google.co.uk/chrome/).
 - Install the [TamperMonkey](https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo) Chrome extension.
 - Open the [StreamYard](https://streamyard.com/) website, log into your StreamYard account and open a new broadcast. There is no need to go live.
@@ -28,3 +29,11 @@ The script implements the following keys:
 - SHIFT CTRL COMMAND Y - switches to the private chat
 
 Should be self explanatory in the code how to change the keys and modifiers.
+
+This will now control Streamyard **as long as Chrome has the focus**. If you want to be able to control Streamyard whilst other apps have the focus you can do so with [AutoHotkey](https://www.autohotkey.com/), as on this article:
+
+[https://techdailychronicle.com/managing-streamyard-using-the-elgato-stream-deck/](https://techdailychronicle.com/managing-streamyard-using-the-elgato-stream-deck/)
+
+Look for the heading near the bottom of the page: 'Creating global hotkeys using AutoHotkey'
+
+Thanks to [Elbert Grootenboer](https://techdailychronicle.com/author/eldertgrootenboer/) for providing the instructions on which this updated script is based.
